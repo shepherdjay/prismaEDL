@@ -1,11 +1,11 @@
 ### prismaEDL
 
 #### What is it?
-A flask app for grabbing your PaloAlto Prisma Mobile External IPs and displaying them in various formats. Primarily so that you
+A flask app for grabbing your Palo Alto Prisma Mobile External IPs and displaying them in various formats. Primarily so that you
 can share them with external vendors who may need to whitelist.
 
 Out of the gate it supports Palo's EDL (External Dynamic List) and we hope to support future formats as well. Since Palo's
-format is also fairly human readable it is also the default.
+format is also fairly human readable it is also the home view.
 
 #### How to Use
 
