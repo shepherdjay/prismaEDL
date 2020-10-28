@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "result": [
+    {
+      "zone": "Colombia",
+      "addresses": [
+        "101.1.2.4"
+      ]
+    },
+    {
+      "zone": "Argentina",
+      "addresses": [
+        "101.1.2.5"
+      ]
+    },
+    {
+      "zone": "Brazil Central",
+      "addresses": [
+        "101.1.2.3"
+      ]
+    }
+  ]
+}
