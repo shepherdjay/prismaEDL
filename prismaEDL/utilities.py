@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import List
 import requests
 
-PRISMA_API_URL = 'https://api.gpcloudservice.com/getPrismaAccessIP/v2'
+PRISMA_API_URL = 'https://api.prod.datapath.prismaaccess.com/getPrismaAccessIP/v2'
 
 @dataclass()
 class MobileIP:
@@ -18,7 +18,7 @@ def get_mobile_ips(api_key):
     headers = {
         'header-api-key': api_key
     }
-    result = requests.post(url=PRISMA_API_URL, headers=headers, json=data, verify=False).json()
+    result = requests.post(url=PRISMA_API_URL, headers=headers, json=data).json()
     try:
         if result['status'] == 'success':
             mobile_ips = []
