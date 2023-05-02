@@ -1,23 +1,43 @@
 {
   "status": "success",
-  "result": [
-    {
+  "result": [{
       "zone": "Colombia",
       "addresses": [
         "101.1.2.4"
-      ]
+      ],
+      "address_details": [{
+        "address": "101.1.2.4",
+        "serviceType": "gp_gateway",
+        "addressType": "active",
+        "create_time": 1683063866,
+        "allow_listed": false
+      }]
     },
     {
       "zone": "Argentina",
       "addresses": [
         "101.1.2.5"
-      ]
+      ],
+      "address_details": [{
+        "address": "101.1.2.5",
+        "serviceType": "gp_gateway",
+        "addressType": "active",
+        "create_time": 1683063866,
+        "allow_listed": false
+      }]
     },
     {
       "zone": "Brazil Central",
       "addresses": [
         "101.1.2.3"
-      ]
+      ],
+      "address_details": [{
+        "address": "101.1.2.3",
+        "serviceType": "gp_gateway",
+        "addressType": "active",
+        "create_time": 1683063866,
+        "allow_listed": false
+      }]
     }
   ]
 }
