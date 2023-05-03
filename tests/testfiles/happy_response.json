@@ -4,7 +4,7 @@
       "zone": "Colombia",
       "addresses": [
         "101.1.2.4",
-        "101.2.3.4",
+        "101.2.3.4"
       ],
       "address_details": [{
         "address": "101.1.2.4",
@@ -18,7 +18,7 @@
         "serviceType": "gp_gateway",
         "addressType": "reserved",
         "create_time": 1683063866,
-        "allow_listed": false,
+        "allow_listed": false
       }]
     },
     {
