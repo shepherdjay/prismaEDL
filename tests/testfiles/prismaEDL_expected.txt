@@ -1,0 +1,4 @@
+101.1.2.4 #Colombia - ACTIVE
+101.2.3.4 #Colombia - RESERVED
+101.1.2.5 #Argentina - ACTIVE
+101.1.2.3 #Brazil Central - ACTIVE
