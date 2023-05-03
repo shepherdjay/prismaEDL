@@ -4,10 +4,12 @@ import requests
 
 PRISMA_API_URL = 'https://api.prod.datapath.prismaaccess.com/getPrismaAccessIP/v2'
 
-@dataclass()
+@dataclass
 class MobileIP:
     zone: str
-    addresses: List[str]
+    address: str
+    status: str
+    type: str
 
 def get_mobile_ips(api_key):
     data = {
@@ -23,7 +25,12 @@ def get_mobile_ips(api_key):
         if result['status'] == 'success':
             mobile_ips = []
             for entry in result['result']:
-                mobile_ips.append(MobileIP(zone=entry['zone'], addresses=entry['addresses']))
+                zone = entry['zone']
+                for details in entry['address_details']:
+                    address = details['address']
+                    status = details['addressType']
+                    type = details['serviceType']
+                    mobile_ips.append(MobileIP(zone=zone, address=address, status=status, type=type))
             return mobile_ips
     except KeyError:
         raise RuntimeError(result)

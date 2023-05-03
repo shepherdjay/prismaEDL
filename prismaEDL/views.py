@@ -11,7 +11,6 @@ def palo_edl():
     ip_data = get_mobile_ips(api_key)
     palo_format = []
     for mobile_ip in ip_data:
-        for address in mobile_ip.addresses:
-            palo_format.append(f'{address} #{mobile_ip.zone}')
+        palo_format.append(f'{mobile_ip.address} #{mobile_ip.zone} - {mobile_ip.status.upper()}')
 
     return Response('\n'.join(palo_format), mimetype='text/plaintext')
