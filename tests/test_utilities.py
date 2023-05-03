@@ -13,7 +13,7 @@ def test_data_get_valid(requests_mock):
         json_data = infile.read()
     requests_mock.post(PRISMA_API_URL, text=json_data)
     expected = [
-        MobileIP(zone='Colombia', addresses=['101.1.2.4']),
+        MobileIP(zone='Colombia', addresses=['101.1.2.4', '101.2.3.4']),
         MobileIP(zone='Argentina', addresses=['101.1.2.5']),
         MobileIP(zone='Brazil Central', addresses=['101.1.2.3'])
     ]
