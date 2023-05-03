@@ -14,4 +14,4 @@ def palo_edl():
         for address in mobile_ip.addresses:
             palo_format.append(f'{address} #{mobile_ip.zone}')
 
-    return Response('\r\n'.join(palo_format), mimetype='text/plaintext')
+    return Response('\n'.join(palo_format), mimetype='text/plaintext')
